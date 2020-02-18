@@ -1,0 +1,39 @@
+# Pyomo data file for machinery_problem_abstract.py
+
+set M := m1 m2 m3 m4;
+set S := s1 s2 s3;
+
+param profit :=
+    m1 12
+    m2  8
+    m3 12
+    m4 17
+;
+
+param max_time :=
+    s1  960
+    s2 1110
+    s3  400
+;
+
+param time_x_section: s1 s2 s3 :=
+m1  6   3  2
+m2  4   3  1
+m3  4   6  2
+m4  8   9  1
+;
+
+#param time_x_section :=
+#m1 s1 6
+#m1 s2 3
+#m1 s3 2
+#m2 s1 4
+#m2 s2 3
+#m2 s3 1
+#m3 s1 4
+#m3 s2 6
+#m3 s3 2
+#m4 s1 8
+#m4 s2 9
+#m4 s3 1
+#;
